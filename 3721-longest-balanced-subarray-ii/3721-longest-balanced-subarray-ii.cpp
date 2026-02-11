@@ -100,7 +100,7 @@ public:
 
             int pos = st.query(1, now);
             ans = max(ans, i - pos);
-        }
+        
         return ans;
     }
 };
