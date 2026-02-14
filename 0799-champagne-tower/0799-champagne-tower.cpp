@@ -9,8 +9,7 @@ class Solution {
         if (dp[i][j] > 1) {
           dp[i + 1][j] += (dp[i][j] - 1) / 2.0;
           dp[i + 1][j + 1] += (dp[i][j] - 1) / 2.0;
-        }
-
+        } 
     return min(1.0, dp[query_row][query_glass]);
   }
 };
